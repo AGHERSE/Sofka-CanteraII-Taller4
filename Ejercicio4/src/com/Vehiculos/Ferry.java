@@ -13,21 +13,26 @@ import java.util.Scanner;
  */
 public class Ferry extends Vehiculo {
     
+    private String estilo;
+    
     public Ferry() {
         super();
+        this.estilo = "";
     }
 
-    @Override
-    public String toString() {
-        return "Nombre: " + this.getNombre()
-                + "\nMatricula: " + this.getMatricula()
-                + "\nFecha Matriculación: " + this.getFechaMatriculacion()
-                + "\nMedio de Desplazamiento: " + this.getMedioDesplazamiento()
-                + "\nTiene tripulación: " + this.isTripulacion()
-                + "\nCantidad de Ruedas: " + this.getNumeroDeRuedas()
-                + "\nCapacidad Máxima: " + this.getCapacidadMaxima()
-                + "\nPasajeros Actualmente: " + this.getPasajerosActualmente()
-                + "\n________________________________________________________\n";
+    public String getEstilo() {
+        return estilo;
+    }
+
+    public void setEstilo(String estilo) {
+        this.estilo = estilo;
+    }
+
+    
+    public String informacionFerry() {
+        return this.toString() 
+                + "\nEstilo del ferry: " + this.estilo
+                + "\n_______________________________________\n";
     }
 
 

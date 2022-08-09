@@ -210,4 +210,15 @@ public abstract class Vehiculo {
             System.out.println("Aumentando... Velocidad Actual: " + this.getVelocidadActual() + "km/h");
         }
     }
+    
+    public String toString() {
+        return "Nombre: " + this.getNombre()
+                + "\nMatricula: " + this.getMatricula()
+                + "\nFecha Matriculación: " + this.getFechaMatriculacion()
+                + "\nMedio de Desplazamiento: " + this.getMedioDesplazamiento()
+                + "\nTiene tripulación: " + this.isTripulacion()
+                + "\nCantidad de Ruedas: " + this.getNumeroDeRuedas()
+                + "\nCapacidad Máxima: " + this.getCapacidadMaxima()
+                + "\nPasajeros Actualmente: " + this.getPasajerosActualmente();
+    }
 }
